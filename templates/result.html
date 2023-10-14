@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Matching Key: {{ matching_key }}</h1>
+    <ul>
+        {% for course_name, percentage in course_percentages %}
+        <li>{{ course_name }}: {{ percentage }}%</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
